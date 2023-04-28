@@ -1,0 +1,117 @@
+:root {
+    --color-emerald-50: #ecfdf5;
+    --color-emerald-100: #d1fae5;
+    --color-emerald-200: #a7f3d0;
+    --color-emerald-300: #6ee7b7;
+    --color-emerald-400: #34d399;
+    --color-emerald-500: #10b981;
+    --color-emerald-600: #059669;
+    --color-emerald-700: #047857;
+    --color-emerald-800: #065f46;
+    --color-emerald-900: #064e3b;
+
+    --color-neutral-400: #94a3b8;
+
+    --color-navigation: #64748B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-emerald-50);
+    overflow: hidden;
+}
+
+img {
+    margin-top: 8rem;
+    width: 25rem;
+    height: auto;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    color: var(--color-emerald-700);
+    font-weight: 700;
+}
+
+p {
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: var(--color-neutral-400);
+    font-weight: 400;
+    text-align: center;
+}
+
+.button {
+    width: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.previous {
+    border: hidden;
+    margin: 0;
+    width: auto;
+    background-color: transparent;
+}
+
+a.previous {
+    font-size: 1.6rem;
+    color: var(--color-emerald-700);
+}
+
+.next {
+    border: hidden;
+    margin: 0;
+    padding: 1.6rem 2rem;
+    width: auto;
+    background: var(--color-emerald-700);
+    border-radius: 50rem;
+}
+
+a.next {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.container {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 40%;
+    height: 2rem;
+    margin-top: 6rem;
+}
+
+.navigation>* {
+    border: 1px solid var(--color-navigation);
+    border-radius: 5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.navigation>.c2 {
+    background-color: var(--color-navigation)
+}
