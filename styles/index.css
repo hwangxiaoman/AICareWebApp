@@ -1,6 +1,18 @@
 body {
     background-color: #ffffff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+div {
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    height: 10rem;
 }
