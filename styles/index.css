@@ -1,18 +1,26 @@
-body {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin: auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
 
-div {
-    margin: auto;
-    text-align: center;
+body {
+    width: 100vw;
+    height: 100vh;
 }
 
 img {
-    height: 10rem;
+    width: 8rem;
+    height: auto;
 }
+
+.container {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
