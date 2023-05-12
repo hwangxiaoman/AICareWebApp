@@ -6,7 +6,7 @@ $username = "root";
 
 $password = ""; 
 
-$dbname = "AICareWebApp"; 
+$dbname = "aicarewebapp"; 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

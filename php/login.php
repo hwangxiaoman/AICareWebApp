@@ -16,12 +16,17 @@
         <div class="header">
             <p>Login to your Account</p>
         </div>
-        <form action="login" method="post">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username">
+        <form action="login_request.php" method="post">
+            <div class="input-field">
+                <label for="student number">Student Number</label>
+                <input type="text" name="studentNumber" id="studentNumber">
+            </div>
+            <div class="input-field">
             <label for="password">Password</label>
             <input type="password" name="password" id="password">
-            <input type="button" value="Sign in" id="sign-in">
+            </div>
+            <input type="submit" value="Sign in" id="sign-in">
         </form>
+        <span>Don't have an account yet?&nbsp;<a href="#">Register</a></span>
     </div>
 </body>
