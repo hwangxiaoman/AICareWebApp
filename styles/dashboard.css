@@ -1,0 +1,90 @@
+:root {
+    /* Colors */
+    --color-emerald-50: #ecfdf5;
+    --color-emerald-100: #d1fae5;
+    --color-emerald-200: #a7f3d0;
+    --color-emerald-300: #6ee7b7;
+    --color-emerald-400: #34d399;
+    --color-emerald-500: #10b981;
+    --color-emerald-600: #059669;
+    --color-emerald-700: #047857;
+    --color-emerald-800: #065f46;
+    --color-emerald-900: #064e3b;
+
+    --color-neutral-400: #94a3b8;
+
+    --color-navigation: #64748B;
+
+    --color-shadow: #000000;
+    --color-white: #FFFFFF;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-emerald-50);
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.header {
+    background-color: var(--color-emerald-900);
+    width: 100%;
+    display: flex;
+    height: 15%;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.logo-section>img {
+    height: 3.5rem;
+}
+
+.logo-section>span {
+    color: var(--color-emerald-50);
+    font-size: 2rem;
+    padding-top: 0.5rem;
+}
+
+.profile-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-navigation>img {
+    margin: 1rem;
+}
+
+.profile-navigation>img:first-child {
+    height: 1.5rem;
+}
+
+.profile-navigation>img:last-child {
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.dashboard-navigation {
+    background-color: var(--color-emerald-100);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}

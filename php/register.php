@@ -24,7 +24,7 @@
 
         <form action="register_request.php" method="post">
             <div class="input-field">
-                <label for="student number">Student Number</label>
+                <label for="studentNumber">Student Number</label>
                 <input type="text" name="studentNumber" id="studentNumber" value="<?php echo isset($studentNumber) ? $studentNumber : ''; ?>">
             </div>
             <div class="input-field">
