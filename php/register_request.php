@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($result->num_rows == 0) {
             // registers new user
+            $password = sha1($password);
             $sql = "INSERT INTO `users` (`student_number`, `password`) VALUES ('$studentNumber', '$password')";
             if ($conn->query($sql) === TRUE) {
                 // Registration successful, redirect to the login page

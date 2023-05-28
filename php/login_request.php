@@ -11,6 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     else {
         // Check if the student number and password is correct
+        $password = sha1($password);
         $sql = "SELECT * FROM `users` WHERE `student_number`='$studentNumber' AND `password`='$password'";
         $result = $conn->query($sql);
 
