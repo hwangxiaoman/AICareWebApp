@@ -39,7 +39,7 @@ if (!isset($_SESSION["studentNumber"])) {
             <img src="../assets/dashboard/iconHomeSelected.png" alt="icon-home">
             <span>Home</span>
         </div>
-        <div class="navigation">
+        <div class="navigation" onclick="redirectToPage('deliveryPage')">
             <img src="../assets/dashboard/iconDelivery.png" alt="iconDelivery">
             <span>Delivery</span>
         </div>
@@ -67,7 +67,7 @@ if (!isset($_SESSION["studentNumber"])) {
                     <img src="../assets/dashboard/categoryPackage.png" alt="category-package" >
                     <span>Packages</span>
                 </div>
-                <div class="sub-section" id="categoryFood">
+                <div class="sub-section" id="categoryFood" onclick="redirectToPage('categoryFood')">
                     <img src="../assets/dashboard/categoryFood.png" alt="category-food">
                     <span>Food & Beverages</span>
                 </div>
@@ -75,7 +75,7 @@ if (!isset($_SESSION["studentNumber"])) {
                     <img src="../assets/dashboard/categoryMaterials.png" alt="category-materials">
                     <span>Materials</span>
                 </div>
-                <div class="sub-section" id="categoryMedicine">
+                <div class="sub-section" id="categoryMedicine" onclick="redirectToPage('categoryMedicine')">
                     <img src="../assets/dashboard/categoryMedicine.png" alt="category-medicine">
                     <span>Medicine</span>
                 </div>

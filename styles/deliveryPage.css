@@ -68,47 +68,20 @@ body {
     padding: 0.1rem 0.6rem;
 }
 
-.container {
+.content-area {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    height: 90%;
 }
 
-.package-card {
-    width: 250px;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: var(--color-white);
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+.content-area>.no-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.package-card h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.package-card p {
-    font-size: 1rem;
-    color: var(--color-neutral-400);
-    margin-bottom: 0.5rem;
-}
-
-.package-card .size {
-    font-size: 0.9rem;
-    color: var(--color-neutral-400);
-}
-
-.package-card button {
-    padding: 0.5rem 1rem;
-    background-color: var(--color-emerald-500);
-    color: var(--color-white);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.9rem;
+.content-area>.no-list>img {
+    margin-bottom: 1rem;
 }
