@@ -2,7 +2,15 @@
 include "config.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $firstName = $_POST["firstName"];
+    $middleName = $_POST["middleName"];
+    $lastName = $_POST["lastName"];
     $studentNumber = $_POST["studentNumber"];
+    $college = $_POST["college"];
+    $course = $_POST["course"];
+    $yearLevel = $_POST["yearLevel"];
+    $email = $_POST["email"];
+    $contactNumber = $_POST["contactNumber"];
     $password = $_POST["password"];
     $confirm_password = $_POST["confirm_password"];
 
@@ -15,13 +23,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = "Passwords do not match." . $conn->error;
     } else {
         // Check if the student number already exists in the database
-        $sql = "SELECT * FROM `users` WHERE `student_number`='$studentNumber'";
+        $sql = "SELECT * FROM `users` WHERE `studentNumber`='$studentNumber'";
         $result = $conn->query($sql);
 
         if ($result->num_rows == 0) {
             // registers new user
             $password = sha1($password);
-            $sql = "INSERT INTO `users` (`student_number`, `password`) VALUES ('$studentNumber', '$password')";
+            $sql = "INSERT INTO `users` (`firstName`, `middleName`, `lastName`, `studentNumber`, `college`, `course`, `yearLevel`, `email`, `contactNumber`, `password`) 
+            VALUES ('$firstName', '$middleName', '$lastName', '$studentNumber', '$college', '$course', '$yearLevel', '$email', '$contactNumber', '$password')";
             if ($conn->query($sql) === TRUE) {
                 // Registration successful, redirect to the login page
                 header('Location: login.php');

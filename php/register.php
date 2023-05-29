@@ -23,10 +23,46 @@
         ?>
 
         <form action="register_request.php" method="post">
+            <span>Personal Information</span>
+            <div class="input-field">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName">
+            </div>
+            <div class="input-field">
+                <label for="middleName">Middle Name</label>
+                <input type="text" name="middleName" id="middleName">
+            </div>
+            <div class="input-field">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+            <span>Education</span>
             <div class="input-field">
                 <label for="studentNumber">Student Number</label>
                 <input type="text" name="studentNumber" id="studentNumber" value="<?php echo isset($studentNumber) ? $studentNumber : ''; ?>">
             </div>
+            <div class="input-field">
+                <label for="college">College</label>
+                <input type="text" name="college" id="college">
+            </div>
+            <div class="input-field">
+                <label for="course">Course</label>
+                <input type="text" name="course" id="course">
+            </div>
+            <div class="input-field">
+                <label for="yearLevel">Year Level</label>
+                <input type="text" name="yearLevel" id="yearLevel">
+            </div>
+            <span>Contact Details</span>
+            <div class="input-field">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="input-field">
+                <label for="contactNumber">Contact Number</label>
+                <input type="text" name="contactNumber" id="contactNumber">
+            </div>
+            <span>Password</span>
             <div class="input-field">
                 <label for="password">Enter a Password</label>
                 <input type="password" name="password" id="password">
